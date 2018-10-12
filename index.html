@@ -1,0 +1,23 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+      <title>helloween</title>
+      <!-- //A-Frameを読み込む -->
+      <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+      <!-- ar.jsを読み込む -->
+      <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+    </head>
+    <body>
+      <a-scene embedded arjs>
+        <a-marker preset='hiro' >                            
+            <a-entity geometry="primitive: box" 
+                material="shader: ocean; color: blue; wave-height: 10" 
+                visible="true">
+              <a-animation attribute="rotation" repeat="indefinite" direction="alternate" dur="500" from="0 0 0" to="10 0 0"></a-animation>
+            </a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+      </a-scene>
+    </body>
+  </html>
