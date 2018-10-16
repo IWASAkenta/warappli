@@ -1,13 +1,15 @@
 <!doctype HTML>
 <html>
+<head>
 <!-- release 0.8.0 -->
 <script src="js/aframe-master.min.js"></script>
 <!-- release 1.6.0 -->
 <script src="js/aframe-ar.min.js"></script>
+</head>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs="debugUIEnabled:false;">
       <!-- <a-marker preset="hiro"> -->
-      <a-marker preset="custom" type='pattern' url='Amarker.patt'> 
+      <a-marker preset="custom" type='pattern' url='marker/Amarker.patt'> 
           <a-entity geometry="primitive: cone; radiusBottom: 1; radiusTop: 0.1"
           light="type: point; color: white; intensity: 1"
           material="color: red; shader: flat;"
