@@ -5,17 +5,17 @@
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs="debugUIEnabled:false;">
   	<a-marker preset="hiro">
-          <a-entity geometry="primitive: sphere; radius: 1.5"
-          light="type: point; color: white; intensity: 2"
-          material="color: white; shader: phong;"
+          <a-entity geometry="primitive: cone; radiusBottom: 1; radiusTop: 0.1"
+          light="type: point; color: white; intensity: 1"
+          material="color: red; shader: standard;"
           position="0 0 0">
-              <a-animation
+              <!-- <a-animation
               attribute="rotation"
               to="0 360 0"
               dur="3000"
               easing="linear"
               repeat="indefinite">
-              </a-animation>
+              </a-animation> -->
           </a-entity>
               
   	</a-marker>
